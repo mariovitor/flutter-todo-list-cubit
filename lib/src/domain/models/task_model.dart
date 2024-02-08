@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 
 class TaskModel {
@@ -34,4 +35,18 @@ class TaskModel {
 
   factory TaskModel.fromJson(String source) =>
       TaskModel.fromMap(json.decode(source) as Map<String, dynamic>);
+
+  TaskModel copyWith({
+    String? id,
+    String? name,
+    String? description,
+    bool? isCompleted,
+  }) {
+    return TaskModel(
+      id: id ?? this.id,
+      name: name ?? this.name,
+      description: description ?? this.description,
+      isCompleted: isCompleted ?? this.isCompleted,
+    );
+  }
 }

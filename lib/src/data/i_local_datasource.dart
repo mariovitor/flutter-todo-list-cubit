@@ -1,4 +1,6 @@
 abstract interface class ILocalDatasource {
-  Future<List<String>> getTasksJson();
+  static const String tasksKey = 'tasks';
+
+  Future<List<String>?> getTasksJson();
   Future<bool> saveTasksJson(List<String> tasks);
 }

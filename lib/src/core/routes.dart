@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo_list_cubit/src/presentation/pages/home_page.dart';
+import 'package:todo_list_cubit/src/presentation/home/home_page.dart';
 
 Route<dynamic> onGenerateRoute(RouteSettings settings) {
   final widget = switch (settings.name) {
