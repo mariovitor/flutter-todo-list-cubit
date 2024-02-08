@@ -1,4 +1,4 @@
-###Aplicativo de Lista de Tarefas
+### Aplicativo de Lista de Tarefas
 - **Especificações da tarefa**
   - Permitir adicionar, remover e marcar tarefas como concluídas.
   - Incluir uma tela para adicionar detalhes da tarefa.
